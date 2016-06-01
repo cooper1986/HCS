@@ -51,4 +51,9 @@
     </bean>
     
     <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>
+    
+    <bean id="redisDao" class="com.jz.hcs.dao.cache.RedisDao">
+        <constructor-arg index="0" value="localhost"></constructor-arg>
+        <constructor-arg index="1" value="6379"></constructor-arg>
+    </bean>
 </beans>

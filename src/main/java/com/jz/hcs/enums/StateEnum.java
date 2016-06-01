@@ -11,7 +11,7 @@ package com.jz.hcs.enums;
  */
 public enum StateEnum {
     SUCCESS(1, "秒杀成功"),
-    END(1, "秒杀结束"),
+    END(0, "秒杀结束"),
     REPEAT_KILL(-1, "重复秒杀"),
     INNER_ERROR(-2, "系统异常"),
     DATA_REWITE(-3, "数据篡改");

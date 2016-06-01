@@ -8,6 +8,7 @@ package com.jz.hcs.dao;
 import com.jz.hcs.model.Seckill;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 import org.apache.ibatis.annotations.Param;
 
 /**
@@ -38,4 +39,6 @@ public interface SeckillDao {
      * @return 
      */
     public List<Seckill> selectAll(@Param("offset")int offset, @Param("limit")int limit);
+    
+    public void seckillByProcedure(Map<String, Object> paramMap);
 }

@@ -86,7 +86,7 @@ public class SeckillController {
         }
         
         try {
-            SeckillExecution execution = seckillService.executeSeckill(seckillId, userPhone, md5);
+            SeckillExecution execution = seckillService.executeSeckillByProcedure(seckillId, userPhone, md5);
             return new SeckillResult<>(true, execution);
         } catch(SeckillCloseException e1){
             SeckillExecution execution = new SeckillExecution(seckillId, StateEnum.END);
