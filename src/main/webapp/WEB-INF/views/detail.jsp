@@ -16,6 +16,7 @@
             <link type="text/css" rel="stylesheet" href="${ctx}/static/bootstrap/css/bootstrap.min.css">
     </head>
     <body>
+        <input type="hidden" value="${ctx}" id="ctx"/>
         <div class="container">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">

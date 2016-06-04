@@ -1,13 +1,13 @@
 var seckill = {
     URL: {
         now: function () {
-            return '/HCS/seckill/time/now';
+            return $("#ctx").val() + '/seckill/time/now';
         },
         exposer: function(seckillId){
-            return '/HCS/seckill/' + seckillId + '/exposer';
+            return $("#ctx").val() + '/seckill/' + seckillId + '/exposer';
         },
         execution: function(seckillId, md5){
-            return '/HCS/seckill/' + seckillId + '/' + md5 + '/execute';
+            return $("#ctx").val() + '/seckill/' + seckillId + '/' + md5 + '/execute';
         }
     },
     
