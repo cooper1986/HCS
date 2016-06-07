@@ -16,7 +16,6 @@
             <link type="text/css" rel="stylesheet" href="${ctx}/static/bootstrap/css/bootstrap.min.css">
     </head>
     <body>
-        <input type="hidden" value="${ctx}" id="ctx"/>
         <div class="container">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
@@ -65,7 +64,7 @@
                 seckill.detail.init({
                     seckillId : ${seckill.seckillId},
                     startTime : ${seckill.startTime.time},
-                    endTime : ${seckill.endTime.time},
+                    endTime : ${seckill.endTime.time}
                 }); 
             });
         </script>
